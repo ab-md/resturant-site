@@ -6,6 +6,11 @@ The purepose of building this project was testing my SSG and SSR skills in nextj
 This is a website to order diffirent foods.
 For styling this project I have used tailwindcss and for the backend I have used json-server so the data is not recieved from  a real api.
 
+## 🔧Technologies
+![React](https://img.shields.io/badge/-React-05122A?style=for-the-badge&logo=react)&nbsp;
+![Next.js](https://img.shields.io/badge/-Next.js-05122A?style=for-the-badge&logo=next.js)&nbsp;
+![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-05122A?style=for-the-badge&logo=tailwindCSS&logoColor=06B6D4)
+
 ## Project preview
 ### Home Page
 <div  align="center">

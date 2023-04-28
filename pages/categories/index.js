@@ -14,7 +14,7 @@ export default index;
 
 export async function getServerSideProps(context) {
     const { query: { difficulty, time } } = context;
-    const req = await fetch("http://localhost:4000/data");
+    const req = await fetch(`${process.env.BASE_URL}`);
     const res = await req.json();
     const splitData = data => {
         const pureTime = data.details.at(4)["Cooking Time"].split(" ").at(0);

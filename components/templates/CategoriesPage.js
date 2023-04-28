@@ -27,7 +27,7 @@ const CategoriesPage = ({ data }) => {
         if (difficulty !== filters.difficulty || time !== filters.time) {
             setFilters({ difficulty, time });
         }
-    }, [])
+    }, [difficulty, time, filters.difficulty, filters.time])
 
     return (
         <div className="mt-24">

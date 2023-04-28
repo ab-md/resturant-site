@@ -10,7 +10,7 @@ const Banner = () => {
         >
             <div className="flex flex-1 flex-col items-start gap-6">
                 <h3 className="border-b-3 border-green-600 fontStyle">
-                    FoodsFront
+                    MetaFood
                 </h3>
                 <p className="font-medium">Food Delivery and Takeout!</p>
                 <p className="text-justify">BotoFood is an online food ordering and delivery platform launched by Uber in 2014. Meals are delivered by couriers using cars, scooters, bikes, or on foot.</p>

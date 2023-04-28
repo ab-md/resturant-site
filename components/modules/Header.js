@@ -6,7 +6,7 @@ const Header = () => {
         <div
             className="max-w-4xl flex items-center justify-between mx-auto p-4">
             <div className="text-xl font-bold text-green-500">
-                <Link href="/">FoodsFront</Link>
+                <Link href="/">MetaFood</Link>
             </div>
             <div>
                 <ul className="flex gap-4 text-gray-500 text-lg">

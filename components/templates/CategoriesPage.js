@@ -6,7 +6,7 @@ import Card from '../modules/Card';
 const CategoriesPage = ({ data }) => {
 
     const router = useRouter();
-    const { query: { difficulty, time } } = useRouter();
+    const { query: { difficulty, time } } = router;
 
     const [filters, setFilters] = useState({ difficulty: "", time: "" });
 
@@ -24,10 +24,10 @@ const CategoriesPage = ({ data }) => {
     }
 
     useEffect(() => {
-        if (difficulty !== filters.difficulty || time !== filters.time) {
+        if (filters.difficulty !== difficulty || filters.time !== time) {
             setFilters({ difficulty, time });
         }
-    }, [difficulty, time, filters.difficulty, filters.time])
+    }, [])
 
     return (
         <div className="mt-24">

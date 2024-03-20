@@ -32,7 +32,7 @@ const CategoriesPage = ({ data }) => {
     return (
         <div className="mt-24">
             <p className="text-3xl border-b-5 border-green-600 inline-block leading-8">Categories</p>
-            <form className="mt-12">
+            <form className="mt-12 flex flex-col w-full sm:flex-row">
                 <select
                     value={filters.difficulty}
                     name="difficulty"
@@ -47,20 +47,20 @@ const CategoriesPage = ({ data }) => {
                     value={filters.time}
                     name="time"
                     onChange={filterHandler}
-                    className="text-green-600 bg-gray-200 p-2 rounded-lg shadow-my ml-4">
+                    className="text-green-600 bg-gray-200 p-2 rounded-lg shadow-my sm:ml-4 mt-6 sm:mt-0">
                     <option value="">Cooking Time</option>
                     <option value="more">More than 30 min</option>
                     <option value="less">Less than 30 min</option>
                 </select>
                 <button
                     onClick={filterFoods}
-                    className="bg-green-500 text-white px-4 py-1 h-9 rounded-lg ml-3"
+                    className="bg-green-500 text-white px-4 py-1 h-9 rounded-lg sm:ml-3 mt-6 sm:mt-0"
                 >Search
                 </button>
             </form>
             {
                 !data.length ? (
-                    <div className="mt-12 w-full flex justify-center h-screen items-start">
+                    <div className="my-44 w-full h-full flex justify-center items-center">
                         <Image
                             className="w-96"
                             src="/images/search.png" width={700} height={700} alt="search" />

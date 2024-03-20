@@ -64,7 +64,7 @@ const FoodPage = ({ data }) => {
                     {
                         recipe.map((data, index) => (
                             <li key={index}
-                                className={`${index % 2 == 0 ? "bg-green-300 bg-opacity-80" : "bg-green-100"} p-4 h-24 flex items-center`}>
+                                className={`${index % 2 == 0 ? "bg-green-300 bg-opacity-80" : "bg-green-100"} p-4 py-24 sm:py-4 h-24 flex items-center`}>
                                 <span className="text-3xl px-4">{index + 1}</span>
                                 <span>{data}</span>
                             </li>
